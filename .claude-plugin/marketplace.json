@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "slide-library",
-      "source": { "source": "github", "repo": "airoasting/slide_library" },
+      "source": { "source": "git-subdir", "url": "https://github.com/airoasting/slide_library.git", "path": "slide-clone" },
       "description": "슬라이드 35종 템플릿으로 결과물의 형식을 잡는 스킬"
     },
     {
