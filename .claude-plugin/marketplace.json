@@ -54,6 +54,23 @@
         "url": "https://github.com/airoasting/hound.git"
       },
       "description": "네이버·유튜브·X·레딧 등 16개 채널을 끝까지 추적하는 검색 스킬"
+    },
+    {
+      "name": "dart",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/dart.git"
+      },
+      "description": "DART 공시 재무 데이터로 인터랙티브 애널리스트 HTML 리포트를 만드는 스킬"
+    },
+    {
+      "name": "strategy",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/airoasting/strategy.git",
+        "path": "strategy"
+      },
+      "description": "상황에 맞는 컨설팅 전략 프레임워크를 골라 적용법까지 안내하는 스킬"
     }
   ]
 }
