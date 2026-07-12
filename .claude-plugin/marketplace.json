@@ -9,32 +9,32 @@
   "plugins": [
     {
       "name": "slide-library",
-      "source": { "source": "github", "repo": "airoasting/slide_library" },
+      "source": { "source": "git", "url": "https://github.com/airoasting/slide_library.git" },
       "description": "슬라이드 35종 템플릿으로 결과물의 형식을 잡는 스킬"
     },
     {
       "name": "casting",
-      "source": { "source": "github", "repo": "airoasting/casting" },
+      "source": { "source": "git", "url": "https://github.com/airoasting/casting.git" },
       "description": "목적 한 줄로 검증된 에이전트 팀을 설계해 끝까지 실행하는 스킬"
     },
     {
       "name": "5color",
-      "source": { "source": "github", "repo": "airoasting/5color" },
+      "source": { "source": "git", "url": "https://github.com/airoasting/5color.git" },
       "description": "다섯 색 페르소나(BLACK·RED·SILVER·BLUE·GOLD)로 초안을 채점하고 다시 만드는 스킬"
     },
     {
       "name": "korean",
-      "source": { "source": "github", "repo": "airoasting/korean" },
+      "source": { "source": "git", "url": "https://github.com/airoasting/korean.git" },
       "description": "AI가 쓴 한국어의 AI 티를 걷어내 사람 글로 다듬는 윤문 스킬"
     },
     {
       "name": "council",
-      "source": { "source": "github", "repo": "airoasting/council" },
+      "source": { "source": "git", "url": "https://github.com/airoasting/council.git" },
       "description": "25인 거장 자문단이 어려운 결정을 여러 관점으로 로스팅하는 스킬"
     },
     {
       "name": "hound",
-      "source": { "source": "github", "repo": "airoasting/hound" },
+      "source": { "source": "git", "url": "https://github.com/airoasting/hound.git" },
       "description": "네이버·유튜브·X·레딧 등 16개 채널을 끝까지 추적하는 검색 스킬"
     }
   ]
