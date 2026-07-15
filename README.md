@@ -1,6 +1,6 @@
 # airoasting 스킬 마켓플레이스
 
-목표부터 검증까지 한 흐름으로 잇는 여섯 스킬을 **명령 두 줄로 한 번에 설치**하는 Claude Code 플러그인 마켓플레이스.
+목표부터 검증까지 한 흐름으로 잇는 여덟 스킬을 **명령 두 줄로 한 번에 설치**하는 Claude Code 플러그인 마켓플레이스.
 
 - slide_library (형식·슬라이드 템플릿)
 - casting (에이전트 팀 빌더)
@@ -8,6 +8,8 @@
 - korean (한국어 윤문)
 - council (25인 자문단)
 - hound (16개 채널 추적 검색)
+- dart (DART 공시 재무 리포트)
+- strategy (컨설팅 전략 프레임워크)
 
 ## 설치 (사용자)
 
@@ -19,7 +21,7 @@ Claude Code(터미널)에서:
 ```
 
 - 첫 줄: 이 마켓플레이스를 등록합니다(저장소 이름은 아래 "게시"에서 정한 곳으로 바꿉니다).
-- 둘째 줄: 마켓플레이스의 여섯 플러그인을 전부 설치합니다.
+- 둘째 줄: 마켓플레이스의 여덟 플러그인을 전부 설치합니다.
 
 하나만 설치하려면 `/plugin install casting@airoasting` 처럼 씁니다.
 설치 확인은 `/plugin list`, 최신화는 `/plugin marketplace update airoasting`.
@@ -32,7 +34,9 @@ Claude Code(터미널)에서:
 
 ### 1. 각 스킬 저장소에 plugin.json 추가
 
-여섯 저장소 각각에 `.claude-plugin/plugin.json` 파일 하나만 넣고 커밋합니다. 내용은 이 저장소의 `skill-repo-plugin-json/<이름>__plugin.json`에 준비해 뒀습니다.
+여덟 저장소 각각에 `.claude-plugin/plugin.json` 파일 하나만 넣고 커밋합니다. 내용은 이 저장소의 `skill-repo-plugin-json/<이름>__plugin.json`에 준비해 뒀습니다. 여덟 저장소 모두 이 단계를 마쳤습니다.
+
+`strategy`만 예외입니다. 소스 타입이 `git-subdir`이라 플러그인 루트가 저장소 루트가 아니라 `strategy/` 하위입니다. 그래서 `plugin.json`도 `strategy/.claude-plugin/plugin.json`에 둡니다.
 
 예: `airoasting/casting` 저장소에
 
@@ -58,12 +62,12 @@ git push -u origin main
 
 ### 3. 검증
 
-게시 후 실제로 `/plugin marketplace add airoasting/skills` → `/plugin install @airoasting`를 한 번 돌려 여섯 스킬이 다 뜨는지 확인합니다. 만약 특정 스킬이 로드되지 않으면, 그 저장소의 `SKILL.md`를 `skills/<이름>/SKILL.md`로 옮기고 plugin.json은 그대로 두면 됩니다(다중 스킬 표준 레이아웃).
+게시 후 실제로 `/plugin marketplace add airoasting/skills` → `/plugin install @airoasting`를 한 번 돌려 여덟 스킬이 다 뜨는지 확인합니다. 만약 특정 스킬이 로드되지 않으면, 그 저장소의 `SKILL.md`를 `skills/<이름>/SKILL.md`로 옮기고 plugin.json은 그대로 두면 됩니다(다중 스킬 표준 레이아웃).
 
 ## 파일
 
 ```
 .claude-plugin/marketplace.json     ← 마켓플레이스 매니페스트 (게시 대상)
-skill-repo-plugin-json/             ← 각 스킬 저장소에 넣을 plugin.json 6개 (참고용, 게시 대상 아님)
+skill-repo-plugin-json/             ← 각 스킬 저장소에 넣을 plugin.json 8개 (참고용, 게시 대상 아님)
 README.md
 ```
