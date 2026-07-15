@@ -4,7 +4,7 @@
 
 - slide_library (형식·슬라이드 템플릿)
 - casting (에이전트 팀 빌더)
-- 5color (다섯 색 리뷰 페르소나)
+- 5color (클로드 프로젝트 지침 생성)
 - korean (한국어 윤문)
 - council (25인 자문단)
 - hound (16개 채널 추적 검색)
