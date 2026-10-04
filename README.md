@@ -36,8 +36,6 @@ Claude Code(터미널)에서:
 
 여덟 저장소 각각에 `.claude-plugin/plugin.json` 파일 하나만 넣고 커밋합니다. 내용은 이 저장소의 `skill-repo-plugin-json/<이름>__plugin.json`에 준비해 뒀습니다. 여덟 저장소 모두 이 단계를 마쳤습니다.
 
-`strategy`만 예외입니다. 소스 타입이 `git-subdir`이라 플러그인 루트가 저장소 루트가 아니라 `strategy/` 하위입니다. 그래서 `plugin.json`도 `strategy/.claude-plugin/plugin.json`에 둡니다.
-
 예: `airoasting/casting` 저장소에
 
 ```
