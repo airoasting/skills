@@ -5,7 +5,7 @@
     "email": "jaydenjkang@gmail.com",
     "url": "https://github.com/airoasting"
   },
-  "description": "AI ROASTING 화이트칼라 업무 스킬 모음. 목표부터 검증까지 한 흐름으로 잇는 여덟 스킬을 한 번에 설치합니다.",
+  "description": "AI ROASTING 화이트칼라 업무 스킬 모음. 목표부터 검증까지 한 흐름으로 잇는 아홉 스킬을 한 번에 설치합니다.",
   "plugins": [
     {
       "name": "slide-library",
@@ -70,6 +70,15 @@
         "url": "https://github.com/airoasting/strategy.git"
       },
       "description": "상황에 맞는 컨설팅 전략 프레임워크를 골라 적용법까지 안내하는 스킬"
+    },
+    {
+      "name": "korean-law",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/airoasting/korean-law.git",
+        "path": "korean-law"
+      },
+      "description": "AI가 쓴 한국 법률 문서의 조문·판례 인용을 법제처 DB로 검증해 통과·반려를 판정하는 스킬"
     }
   ]
 }
