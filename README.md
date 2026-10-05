@@ -37,7 +37,7 @@ Claude Code(터미널)에서:
 
 아홉 저장소 각각에 `.claude-plugin/plugin.json` 파일 하나만 넣고 커밋합니다. 내용은 이 저장소의 `skill-repo-plugin-json/<이름>__plugin.json`에 준비해 뒀습니다. 아홉 저장소 모두 이 단계를 마쳤습니다.
 
-`korean-law`만 예외입니다. 저장소 루트에 MCP 서버(`mcp/`)와 평가(`evals/`)가 함께 있고 스킬은 `korean-law/` 하위에 있어서, 소스 타입을 `git-subdir`(path `korean-law`)로 둡니다. 그래서 `plugin.json`도 `korean-law/.claude-plugin/plugin.json`에 둡니다. 또 이 스킬은 법제처 MCP 연결이 있어야 동작합니다. 플러그인 설치는 스킬만 넣으므로, MCP 서버 연결과 인증키(OC)는 korean-law 저장소 README의 설치 절차를 따로 따릅니다.
+`korean-law`도 다른 스킬과 같은 구조입니다(2026-10-04 정리). 저장소 루트에 `SKILL.md`와 `.claude-plugin/plugin.json`이 있고, MCP 서버(`mcp/`)와 평가(`evals/`)는 같은 저장소의 하위 폴더에 있습니다. 다만 이 스킬은 법제처 MCP 연결이 있어야 동작합니다. 플러그인 설치는 스킬만 넣으므로, MCP 서버 연결과 인증키(OC)는 korean-law 저장소 README의 설치 절차를 따로 따릅니다.
 
 예: `airoasting/casting` 저장소에
 
