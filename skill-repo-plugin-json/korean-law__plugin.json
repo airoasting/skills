@@ -1,5 +1,5 @@
 {
   "name": "korean-law",
   "description": "AI가 쓴 한국 법률 문서의 조문·판례 인용을 법제처 DB로 검증해 통과·반려를 판정하는 스킬",
-  "version": "1.1.0"
+  "version": "1.2.0"
 }
