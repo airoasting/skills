@@ -82,8 +82,10 @@
     {
       "name": "find-skills",
       "source": {
-        "source": "url",
-        "url": "https://github.com/airoasting/find-skills.git"
+        "source": "git-subdir",
+        "url": "https://github.com/airoasting/find-skills.git",
+        "path": "skills/find-skills",
+        "ref": "main"
       },
       "description": "설치된 스킬, AI Roasting 스킬 라이브러리, skills.sh 순으로 필요한 스킬을 찾아 검증하고 설치까지 돕는 스킬"
     }
