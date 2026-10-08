@@ -61,7 +61,7 @@
         "source": "url",
         "url": "https://github.com/airoasting/dart.git"
       },
-      "description": "DART 공시 재무 데이터로 인터랙티브 애널리스트 HTML 리포트를 만드는 스킬"
+      "description": "DART 공시 재무 데이터로 인터랙티브 애널리스트 HTML 리포트를 만들고, 지분·임원·배당 같은 공시 숫자를 원문 링크와 함께 바로 조회하는 스킬(MCP 서버 포함)"
     },
     {
       "name": "strategy",

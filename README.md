@@ -8,7 +8,7 @@
 - korean (한국어 윤문)
 - council (25인 자문단)
 - hound (16개 채널 추적 검색)
-- dart (DART 공시 재무 리포트)
+- dart (DART 공시 리포트·조회)
 - strategy (컨설팅 전략 프레임워크)
 - korean-law (법률 인용 검증 게이트)
 
