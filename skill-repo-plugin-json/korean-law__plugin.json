@@ -1,5 +1,37 @@
 {
   "name": "korean-law",
-  "description": "AI가 쓴 한국 법률 문서의 조문·판례 인용을 법제처 DB로 검증해 통과·반려를 판정하는 스킬",
-  "version": "1.2.0"
+  "description": "AI가 쓴 한국 법률 문서의 조문·판례 인용을 법제처 DB로 검증해 통과·반려를 판정하는 스킬, 그리고 법제처 조회 도구 6개를 담은 MCP 서버",
+  "version": "1.3.0",
+  "author": {
+    "name": "airoasting"
+  },
+  "repository": "https://github.com/airoasting/korean-law",
+  "license": "MIT",
+  "userConfig": {
+    "oc": {
+      "type": "string",
+      "title": "법제처 Open API 인증키(OC)",
+      "description": "https://open.law.go.kr 에서 무료로 발급받는다. 비워 두면 법령·판례 검증이 멈춘다",
+      "sensitive": true,
+      "required": true
+    },
+    "max_requests": {
+      "type": "number",
+      "title": "도구 호출 1회당 법제처 요청 상한",
+      "description": "verify_document는 문서 한 편에 수십 번을 부른다. 기본 400",
+      "default": 400,
+      "min": 1,
+      "max": 2000
+    }
+  },
+  "mcpServers": {
+    "korean-law": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/dist/server.mjs"],
+      "env": {
+        "KOREAN_LAW_OC": "${user_config.oc}",
+        "KOREAN_LAW_MAX_REQUESTS": "${user_config.max_requests}"
+      }
+    }
+  }
 }
