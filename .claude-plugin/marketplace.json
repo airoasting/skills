@@ -5,7 +5,7 @@
     "email": "jaydenjkang@gmail.com",
     "url": "https://github.com/airoasting"
   },
-  "description": "AI ROASTING 화이트칼라 업무 스킬 모음. 목표부터 검증까지 한 흐름으로 잇는 열 가지 스킬을 한 번에 설치합니다.",
+  "description": "AI ROASTING 화이트칼라 업무 스킬 모음. 목표부터 검증까지 한 흐름으로 잇는 열한 가지 스킬을 한 번에 설치합니다.",
   "plugins": [
     {
       "name": "slide-library",
@@ -86,6 +86,14 @@
         "url": "https://github.com/airoasting/find-skills.git"
       },
       "description": "설치된 스킬, AI Roasting 스킬 라이브러리, skills.sh 순으로 필요한 스킬을 찾아 검증하고 설치까지 돕는 스킬"
+    },
+    {
+      "name": "seoul-data",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/seoul-data.git"
+      },
+      "description": "서울 열린데이터광장 공공데이터로 답하는 스킬(MCP 서버 포함). 주요 장소 121곳의 실시간 혼잡도, 지하철 도착, 따릉이, 실거래 집계. 무료 인증키가 있으면 전체 기능, 없으면 체험 모드"
     }
   ]
 }
