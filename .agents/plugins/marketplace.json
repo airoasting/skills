@@ -1,0 +1,164 @@
+{
+  "name": "airoasting",
+  "interface": {
+    "displayName": "AI ROASTING"
+  },
+  "plugins": [
+    {
+      "name": "5color",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/5color.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "casting",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/casting.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "council",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/council.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "slide-library",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/slide_library.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "korean",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/korean.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "hound",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/hound.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "strategy",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/strategy.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "find-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/find-skills.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dart",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/dart.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "korean-law",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/korean-law.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "seoul-data",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/seoul-data.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "edgar",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/edgar.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "jpx",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/jpx.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "_설명": "codex_sync.py가 읽는 정본. Claude 매니페스트에는 없고 Codex에만 필요한 값을 플러그인 이름별로 적는다. env_vars는 MCP 서버가 사용자 셸에서 넘겨받을 환경변수, category는 Codex 마켓플레이스 분류다. 적지 않은 플러그인은 env_vars 없음, category는 default_category를 쓴다.",
+  "default_category": "Productivity",
+  "plugins": {
+    "hound": {"category": "Research"},
+    "dart": {"category": "Research", "env_vars": ["DART_API_KEY"]},
+    "korean-law": {"category": "Research"},
+    "seoul-data": {"category": "Research"},
+    "edgar": {"category": "Research", "env_vars": ["EDGAR_NAME", "EDGAR_EMAIL", "EDGAR_USER_AGENT"]},
+    "jpx": {"category": "Research"}
+  }
+}
