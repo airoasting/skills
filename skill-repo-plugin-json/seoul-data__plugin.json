@@ -1,7 +1,7 @@
 {
   "name": "seoul-data",
   "description": "서울 열린데이터광장 Open API를 도구 7개로 쓰는 MCP 서버와 스킬. 실시간 혼잡도, 지하철 도착, 따릉이, 그리고 5,891개 데이터셋의 조회와 집계",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "airoasting"
   },
