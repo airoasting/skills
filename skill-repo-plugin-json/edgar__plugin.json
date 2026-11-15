@@ -1,0 +1,18 @@
+{
+  "name": "edgar",
+  "description": "미국 SEC EDGAR 공시(재무·4분기·추이, 8-K 실적 발표, 본문·전문 검색, Form 4 내부자, 13F 기관 보유)를 조회하는 스킬과 MCP 서버 13개 도구. API 키 없이 처음 쓸 때 이름과 이메일만 등록한다",
+  "version": "0.5.0",
+  "author": {
+    "name": "airoasting"
+  },
+  "repository": "https://github.com/airoasting/edgar",
+  "license": "MIT",
+  "mcpServers": {
+    "edgar": {
+      "command": "python3",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/assets/mcp_server.py"
+      ]
+    }
+  }
+}

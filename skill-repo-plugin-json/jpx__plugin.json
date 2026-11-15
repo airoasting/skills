@@ -1,0 +1,18 @@
+{
+  "name": "jpx",
+  "description": "일본 상장사 결산단신(決算短信)과 업적 예상 수정 공시로 실적, 3개월 분기, 회사 예상 이력과 진척률, 밸류에이션을 답하는 스킬과 MCP 서버. 키가 필요 없다",
+  "version": "0.2.0",
+  "author": {
+    "name": "airoasting"
+  },
+  "repository": "https://github.com/airoasting/jpx",
+  "license": "MIT",
+  "mcpServers": {
+    "jpx": {
+      "command": "python3",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/assets/mcp_server.py"
+      ]
+    }
+  }
+}

@@ -5,15 +5,15 @@
     "email": "jaydenjkang@gmail.com",
     "url": "https://github.com/airoasting"
   },
-  "description": "AI ROASTING 화이트칼라 업무 스킬 모음. 목표부터 검증까지 한 흐름으로 잇는 열한 가지 스킬을 한 번에 설치합니다.",
+  "description": "AI ROASTING 화이트칼라 업무 스킬 모음. 목표부터 검증까지 한 흐름으로 잇는 열세 가지 스킬을 한 번에 설치합니다.",
   "plugins": [
     {
-      "name": "slide-library",
+      "name": "5color",
       "source": {
         "source": "url",
-        "url": "https://github.com/airoasting/slide_library.git"
+        "url": "https://github.com/airoasting/5color.git"
       },
-      "description": "슬라이드 35종 템플릿으로 결과물의 형식을 잡는 스킬"
+      "description": "문서 종류 한 단어로 그 영역 전용 클로드 프로젝트 지침을 만드는 스킬. 지침을 붙인 프로젝트가 BLACK 초안과 RED·SILVER·BLUE·GOLD 4인 평가를 돌린다"
     },
     {
       "name": "casting",
@@ -24,12 +24,20 @@
       "description": "목적 한 줄로 검증된 50인 에이전트 팀(10개 본부)을 설계해 끝까지 실행하는 스킬"
     },
     {
-      "name": "5color",
+      "name": "council",
       "source": {
         "source": "url",
-        "url": "https://github.com/airoasting/5color.git"
+        "url": "https://github.com/airoasting/council.git"
       },
-      "description": "문서 종류 한 단어로 그 영역 전용 클로드 프로젝트 지침을 만드는 스킬. 지침을 붙인 프로젝트가 BLACK 초안과 RED·SILVER·BLUE·GOLD 4인 평가를 돌린다"
+      "description": "25인 거장 자문단이 어려운 결정을 여러 관점으로 로스팅하는 스킬"
+    },
+    {
+      "name": "slide-library",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/slide_library.git"
+      },
+      "description": "슬라이드 35종 템플릿으로 결과물의 형식을 잡는 스킬"
     },
     {
       "name": "korean",
@@ -40,28 +48,12 @@
       "description": "AI가 쓴 한국어의 AI 티를 걷어내 사람 글로 다듬는 윤문 스킬"
     },
     {
-      "name": "council",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/airoasting/council.git"
-      },
-      "description": "25인 거장 자문단이 어려운 결정을 여러 관점으로 로스팅하는 스킬"
-    },
-    {
       "name": "hound",
       "source": {
         "source": "url",
         "url": "https://github.com/airoasting/hound.git"
       },
       "description": "네이버·유튜브·X·레딧 등 16개 채널을 끝까지 추적하는 검색 스킬"
-    },
-    {
-      "name": "dart",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/airoasting/dart.git"
-      },
-      "description": "DART 공시 재무 데이터로 인터랙티브 애널리스트 HTML 리포트를 만들고, 지분·임원·배당 같은 공시 숫자를 원문 링크와 함께 바로 조회하는 스킬(MCP 서버 포함)"
     },
     {
       "name": "strategy",
@@ -72,6 +64,22 @@
       "description": "상황에 맞는 컨설팅 전략 프레임워크를 골라 적용법까지 안내하는 스킬"
     },
     {
+      "name": "find-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/find-skills.git"
+      },
+      "description": "설치된 스킬, AI Roasting 스킬 라이브러리와 MCP 허브, skills.sh 순으로 필요한 스킬을 찾아 검증하고 설치까지 돕는 스킬"
+    },
+    {
+      "name": "dart",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/dart.git"
+      },
+      "description": "DART 공시 재무 데이터로 인터랙티브 애널리스트 HTML 리포트를 만들고, 지분·임원·배당 같은 공시 숫자를 원문 링크와 함께 바로 조회하는 스킬(MCP 서버 포함)"
+    },
+    {
       "name": "korean-law",
       "source": {
         "source": "url",
@@ -80,20 +88,28 @@
       "description": "AI가 쓴 한국 법률 문서의 조문·판례 인용을 법제처 DB로 검증해 통과·반려를 판정하는 스킬(MCP 서버 포함, 법제처 인증키 필요)"
     },
     {
-      "name": "find-skills",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/airoasting/find-skills.git"
-      },
-      "description": "설치된 스킬, AI Roasting 스킬 라이브러리, skills.sh 순으로 필요한 스킬을 찾아 검증하고 설치까지 돕는 스킬"
-    },
-    {
       "name": "seoul-data",
       "source": {
         "source": "url",
         "url": "https://github.com/airoasting/seoul-data.git"
       },
       "description": "서울 열린데이터광장 공공데이터로 답하는 스킬(MCP 서버 포함). 주요 장소 121곳의 실시간 혼잡도, 지하철 도착, 따릉이, 실거래 집계. 무료 인증키가 있으면 전체 기능, 없으면 체험 모드"
+    },
+    {
+      "name": "edgar",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/edgar.git"
+      },
+      "description": "미국 SEC EDGAR 공시로 재무·분기 추이, 8-K 실적 발표, 본문 검색, 내부자 거래, 13F 기관 보유를 원문 링크와 함께 조회하는 스킬(MCP 서버 포함, API 키 불필요)"
+    },
+    {
+      "name": "jpx",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/airoasting/jpx.git"
+      },
+      "description": "일본 상장사 결산단신과 업적 예상 수정 공시로 실적, 회사 예상 이력과 진척률, 밸류에이션을 답하는 스킬(MCP 서버 포함, API 키 불필요)"
     }
   ]
 }
