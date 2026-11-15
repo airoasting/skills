@@ -31,6 +31,19 @@ Claude Code(터미널)에서:
 하나만 설치하려면 `/plugin install casting@airoasting` 처럼 씁니다.
 설치 확인은 `/plugin list`, 최신화는 `/plugin marketplace update airoasting`.
 
+### Codex에서 설치
+
+Codex CLI(터미널)에서:
+
+```
+codex plugin marketplace add airoasting/skills
+codex plugin add casting@airoasting
+```
+
+Codex는 한 번에 전부 설치하는 명령이 없어 플러그인마다 `codex plugin add <이름>@airoasting`을 씁니다. 설치 확인은 `codex plugin list`, 최신화는 `codex plugin marketplace upgrade airoasting`.
+
+MCP 서버가 붙은 스킬은 인증키를 환경변수로 받습니다(Codex에는 설치할 때 값을 묻는 기능이 없습니다). `korean-law`는 `KOREAN_LAW_OC`, `dart`는 `DART_API_KEY`를 셸에 넣어 둡니다. `edgar`, `jpx`, `seoul-data`는 키 없이 시작합니다.
+
 ## 구조
 
 이 저장소(마켓플레이스)는 `.claude-plugin/marketplace.json` 하나만 있으면 됩니다. 실제 스킬 코드는 각자의 저장소(github.com/airoasting/<이름>)에 그대로 두고, 마켓플레이스는 그 저장소들을 플러그인으로 가리킵니다. 스킬은 중복 저장하지 않으며, 각 저장소가 계속 source of truth입니다.
@@ -71,10 +84,26 @@ git push -u origin main
 
 게시 후 실제로 `/plugin marketplace add airoasting/skills` → `/plugin install @airoasting`를 한 번 돌려 열세 가지 스킬이 다 뜨는지 확인합니다. 만약 특정 스킬이 로드되지 않으면, 그 저장소의 `SKILL.md`를 `skills/<이름>/SKILL.md`로 옮기고 plugin.json은 그대로 두면 됩니다(다중 스킬 표준 레이아웃).
 
+### 4. Codex 플러그인 파일 동기화
+
+Codex는 같은 `.claude-plugin/marketplace.json`을 읽지만, 스킬 저장소 쪽에는 Codex용 파일이 따로 있어야 스킬과 MCP가 잡힙니다(codex-cli 0.159.3에서 확인, 2026-11-15). 그 파일은 손으로 쓰지 않고 `scripts/codex_sync.py`가 정본(`.claude-plugin/plugin.json`, 루트 `SKILL.md`)에서 만듭니다.
+
+```
+python3 scripts/codex_sync.py <스킬 저장소 경로>            # 파일을 쓴다
+python3 scripts/codex_sync.py <스킬 저장소 경로> --check    # 어긋나면 종료 코드 1
+```
+
+만드는 파일은 셋입니다. `.codex-plugin/plugin.json`(매니페스트), `.codex-plugin/skills/<이름>/SKILL.md`(루트 본문을 읽게 하는 진입 스킬), `codex.mcp.json`(MCP가 있을 때). 루트 `SKILL.md`와 폴더 구조는 건드리지 않으므로 `git clone → ~/.claude/skills/<이름>` 설치는 그대로 동작합니다. 왜 이렇게 나눴는지는 스크립트 머리말에 적혀 있습니다.
+
+**버전이나 스킬 설명(`SKILL.md` 머리말)을 바꿀 때마다 이 스크립트를 다시 돌리고 함께 커밋합니다.** 돌리지 않으면 Codex 쪽만 옛 버전과 옛 설명으로 남습니다. MCP 서버에 넘길 환경변수가 늘면 `--env-var 이름`을 붙여 한 번 돌리면 되고, 이후에는 `codex.mcp.json`에 남아 유지됩니다.
+
+실패 조건. Codex가 숨김 폴더 아래 스킬을 읽지 않게 바뀌면 진입 스킬이 사라집니다. Codex를 올린 뒤 `codex plugin add` 후 스킬이 안 보이면 이 가정부터 확인합니다.
+
 ## 파일
 
 ```
 .claude-plugin/marketplace.json     ← 마켓플레이스 매니페스트 (게시 대상)
 skill-repo-plugin-json/             ← 각 스킬 저장소에 넣을 plugin.json 13개 (참고용, 게시 대상 아님)
+scripts/codex_sync.py               ← 스킬 저장소에 Codex 플러그인 파일을 만들고 검사하는 스크립트
 README.md
 ```
